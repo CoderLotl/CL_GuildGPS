@@ -1,0 +1,10 @@
+## Interface: 11200
+## Title: CL_GuildGPS
+## Author: CoderLotl
+## Notes: A simple Guild GPS.
+## Version: 1.0
+## Dependencies: CL_Library
+
+CL_Char.lua
+CL_GPS.lua
+Core.lua
