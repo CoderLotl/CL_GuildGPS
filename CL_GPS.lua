@@ -78,6 +78,7 @@ function CL_GPS.newGPS()
 
     instance.characters = {}
     instance.mapDots = {}
+    instance.debugZones = false
 
     local function messageCallback(inc_msg)
         local _, _, zone, x, y, class, race, level, sender = string.find(inc_msg, "Zone:(.-)-X:(.-)-Y:(.-)-Class:(.-)-Race:(.-)-Level:(.-)-SentBy:(.+)")
@@ -220,8 +221,10 @@ function CL_GPS.newGPS()
     ---------------------------------------------------------------------------------------------------------------
 
     local function updateMapDots()
-        Measure()
-        DrawWorldViewHelper()
+        if instance.debugZones then
+            Measure()
+            DrawWorldViewHelper()
+        end
         local continent = GetCurrentMapContinent()
         local zoneIndex = GetCurrentMapZone()
         local mapZone = "Unknown"
