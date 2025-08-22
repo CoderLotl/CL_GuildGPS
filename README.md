@@ -5,7 +5,7 @@
 - - -
 - <b>Target:</b> >= Turtle WoW 1.12
 - <b>Requirements:</b> [CL_Library](https://github.com/CoderLotl/CL_Library).
-- <b>Version:</b> Alpha 1.1
+- <b>Version:</b> Alpha 1.1.1
 - <b>Description:</b> A simple 1st version of a guild GPS.
 - - -
 <b>Further Detail:</b>
@@ -30,3 +30,8 @@ That means that if you're at <i>Tirisfal Glades</i> and some of your guild mates
     - Continental View is still not implemented. It may <i>appear</i> to work, but it's just because I wanted to test it. <b>PLEASE DON'T MIND IT. I NEED TO FIX THE WORLD VIEW BEFORE TACKLING THAT.</b>
 
 <b>NOTE:</b> Since Classic ~1.12 didn't have many of the cool things Retail had/has, and some other good stuff the devs kept them for the game's internal working, the addon won't send coords while the map is open, in order to not mess the experience for the user.
+
+- <b>22/08/2025 (bis):</b>
+    - Completed the tables of Kalimdor and Eastern Kingdoms. Added the Capital cities and the areas that weren't present at the table.
+    - Re-enabled the zonal view (previously disabled by mistake).
+    - The continental view is still wrong, but the world view is more or less accurate now.

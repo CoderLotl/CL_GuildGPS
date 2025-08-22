@@ -1,30 +1,34 @@
-CL_GPS = {}
-CL_GPS.__index = CL_GPS
-
 ZoneNames = {
-    [1] = {
+    [1] = { -- Kalimdor
         [9] = "Durotar", [19] = "Mulgore", [26] = "The Barrens", [1] = "Ashenvale", [25] = "Teldrassil", [5] = "Darkshore",
         [23] = "Tanaris", [29] = "Un'Goro Crater", [21] = "Silithus", [12] = "Feralas", [10] = "Dustwallow Marsh", [22] = "Stonetalon Mountains",
-        [18] = "Moonglade", [31] = "Winterspring", [2] = "Azshara", [27] = "Thousand Needles", [3] = "Blackstone Island", [24] = "Tel'Abim"
+        [18] = "Moonglade", [31] = "Winterspring", [2] = "Azshara", [27] = "Thousand Needles", [3] = "Blackstone Island", [24] = "Tel'Abim",
+        [7] = "Desolace", [11] = "Fellwood", [15] = "Hyjal", [20] = "Orgrimmar", [28] = "Thunder Bluff", [6] = "Darnassus"
     },
-    [2] = {
+    [2] = { -- Eastern Kingdoms
         [13] = "Elwynn Forest", [34] = "Tirisfal Glades", [27] = "Silverpine Forest", [37] = "Western Plaguelands",
         [12] = "Eastern Plaguelands", [31] = "Thalassian Highlands", [24] = "Scarlet Enclave", [33] = "The Hinterlands", [2] = "Alterac Mountains",
         [15] = "Gilneas", [18] = "Hillsbrad Foothills", [3] = "Arathi Highlands", [39] = "Wetlands", [17] = "Grim Reaches", [21] = "Loch Modan",
         [10] = "Dun Morogh", [26] = "Searing Gorge", [4] = "Badlands", [22] = "Northwind", [8] = "Burning Steppes", [23] = "Redridge Mountains",
         [11] = "Duskwood", [38] = "Westfall", [9] = "Deadwind Pass", [30] = "Swamp of Sorrows", [7] = "Blasted Lands", [29] = "Stranglethorn Vale",
-        [5] = "Balor", [20] = "Lapidis Isle", [14] = "Gillijim's Isle"
+        [5] = "Balor", [20] = "Lapidis Isle", [14] = "Gillijim's Isle", [19] = "Ironforge", [28] = "Stormwind", [36] = "Undercity",
+        [1] = "Alah'Thalas"
     }
 }
 
 ZonePositions = {
     [1] = { -- Kalimdor
+        ["Alah'Thalas"] = {x = 0.576, y = 0.186, width = 0.001, height = 0.001},
+        ["Hyjal"] = {x = 0.500, y = 0.323, width = 0.060, height = 0.037},
+        ["Orgrimmar"] = { x = 0.587, y = 0.435, width = 0.001, height = 0.001},
         ["Durotar"] = {x = 0.56, y = 0.42, width = 0.065, height = 0.12}, -- ✓
+        ["Thunder Bluff"] = {x = 0.389, y = 0.533, width = 0.001, height = 0.001},
         ["Mulgore"] = {x = 0.36, y = 0.50, width = 0.11, height = 0.14}, -- ✓
-        ["The Barrens"] = {x = 0.47, y = 0.42, width = 0.08, height = 0.25}, -- ✓
+        ["The Barrens"] = {x = 0.42, y = 0.42, width = 0.15, height = 0.25}, -- ✓
         ["Ashenvale"] = {x = 0.34, y = 0.36, width = 0.23, height = 0.06}, -- ✓
+        ["Darnassus"] = {x = 0.288, y = 0.153, width = 0.001, height = 0.001},
         ["Teldrassil"] = {x = 0.25, y = 0.11, width = 0.16, height = 0.095}, -- ✓        
-        ["Darkshore"] = {x = 0.34, y = 0.2, width = 0.12, height = 0.16}, -- ✓
+        ["Darkshore"] = {x = 0.34, y = 0.2, width = 0.15, height = 0.16}, -- ✓
         ["Tanaris"] = {x = 0.50, y = 0.73, width = 0.12, height = 0.1},
         ["Un'Goro Crater"] = {x = 0.41, y = 0.73, width = 0.09, height = 0.10},
         ["Silithus"] = {x = 0.25, y = 0.73, width = 0.16, height = 0.13}, -- ✓
@@ -32,45 +36,55 @@ ZonePositions = {
         ["Dustwallow Marsh"] = {x = 0.53, y = 0.56, width = 0.09, height = 0.09},
         ["Stonetalon Mountains"] = {x = 0.255, y = 0.38, width = 0.18, height = 0.11},
         ["Moonglade"] = {x = 0.48, y = 0.181, width = 0.06, height = 0.06},
-        ["Winterspring"] = {x = 0.52, y = 0.175, width = 0.16, height = 0.15},
+        ["Winterspring"] = {x = 0.48, y = 0.175, width = 0.20, height = 0.15},
         ["Azshara"] = {x = 0.56, y = 0.316, width = 0.20, height = 0.12}, -- ✓
         ["Thousand Needles"] = {x = 0.41, y = 0.65, width = 0.2, height = 0.09},
         ["Blackstone Island"] = {x = 0.7, y = 0.47, width = 0.06, height = 0.05}, -- ✓
         ["Tel'Abim"] = {x = 0.672, y = 0.73, width = 0.06, height = 0.08},
+        ["Fellwood"] = {x = 0.440, y = 0.238, width = 0.06, height = 0.12},
+        ["Desolace"] = {x = 0.250, y = 0.49, width = 0.11, height = 0.07}
     },
     [2] = { -- Eastern Kingdoms
-        ["Elwynn Forest"] = {x = 0.42, y = 0.65, width = 0.15, height = 0.15},
-        ["Tirisfal Glades"] = {x = 0.42, y = 0.12, width = 0.15, height = 0.15},
-        ["Silverpine Forest"] = {x = 0.35, y = 0.2, width = 0.15, height = 0.18},
-        ["Western Plaguelands"] = {x = 0.5, y = 0.15, width = 0.15, height = 0.15},
-        ["Eastern Plaguelands"] = {x = 0.6, y = 0.15, width = 0.15, height = 0.15},
-        ["Thalassian Highlands"] = {x = 0.55, y = 0.05, width = 0.12, height = 0.1}, -- Approximate TurtleWoW
-        ["Scarlet Enclave"] = {x = 0.65, y = 0.1, width = 0.1, height = 0.1}, -- Approximate
-        ["The Hinterlands"] = {x = 0.6, y = 0.25, width = 0.15, height = 0.15},
-        ["Alterac Mountains"] = {x = 0.5, y = 0.3, width = 0.1, height = 0.1},
-        ["Gilneas"] = {x = 0.35, y = 0.3, width = 0.12, height = 0.12},
-        ["Hillsbrad Foothills"] = {x = 0.48, y = 0.3, width = 0.15, height = 0.15},
-        ["Arathi Highlands"] = {x = 0.6, y = 0.35, width = 0.15, height = 0.15},
-        ["Wetlands"] = {x = 0.55, y = 0.4, width = 0.15, height = 0.15},
-        ["Grim Reaches"] = {x = 0.65, y = 0.4, width = 0.1, height = 0.1}, -- Approximate
-        ["Loch Modan"] = {x = 0.55, y = 0.5, width = 0.1, height = 0.1},
-        ["Dun Morogh"] = {x = 0.45, y = 0.5, width = 0.18, height = 0.15},
-        ["Searing Gorge"] = {x = 0.4, y = 0.6, width = 0.1, height = 0.1},
-        ["Badlands"] = {x = 0.5, y = 0.6, width = 0.15, height = 0.1},
-        ["Northwind"] = {x = 0.6, y = 0.5, width = 0.1, height = 0.1}, -- Approximate
-        ["Burning Steppes"] = {x = 0.42, y = 0.62, width = 0.12, height = 0.1},
-        ["Redridge Mountains"] = {x = 0.52, y = 0.7, width = 0.12, height = 0.1},
-        ["Duskwood"] = {x = 0.42, y = 0.75, width = 0.12, height = 0.12},
-        ["Westfall"] = {x = 0.32, y = 0.7, width = 0.12, height = 0.12},
-        ["Deadwind Pass"] = {x = 0.48, y = 0.8, width = 0.08, height = 0.08},
-        ["Swamp of Sorrows"] = {x = 0.55, y = 0.75, width = 0.1, height = 0.1},
-        ["Blasted Lands"] = {x = 0.48, y = 0.85, width = 0.12, height = 0.12},
-        ["Stranglethorn Vale"] = {x = 0.35, y = 0.85, width = 0.18, height = 0.25},
-        ["Balor"] = {x = 0.6, y = 0.8, width = 0.1, height = 0.1}, -- Approximate
-        ["Lapidis Isle"] = {x = 0.65, y = 0.85, width = 0.1, height = 0.1}, -- Approximate
-        ["Gillijim's Isle"] = {x = 0.7, y = 0.9, width = 0.1, height = 0.1}, -- Approximate
+        ["Stormwind"] = {x = 0.430, y = 0.627, width = 0.001, height = 0.001},
+        ["Elwynn Forest"] = {x = 0.393, y = 0.607, width = 0.15, height = 0.066},
+        ["Undercity"] = {x = 0.449, y = 0.270 , width = 0.001, height = 0.001},
+        ["Tirisfal Glades"] = {x = 0.326, y = 0.220, width = 0.174, height = 0.07},
+        ["Silverpine Forest"] = {x = 0.375, y = 0.29, width = 0.09, height = 0.06},
+        ["Western Plaguelands"] = {x = 0.5, y = 0.207, width = 0.078, height = 0.103},
+        ["Eastern Plaguelands"] = {x = 0.578, y = 0.18, width = 0.15, height = 0.112},
+        ["Thalassian Highlands"] = {x = 0.54, y = 0.18, width = 0.09, height = 0.046},
+        ["Scarlet Enclave"] = {x = 0.705, y = 0.211, width = 0.049, height = 0.083}, 
+        ["The Hinterlands"] = {x = 0.541, y = 0.29, width = 0.135, height = 0.078},
+        ["Alterac Mountains"] = {x = 0.440, y = 0.287, width = 0.1, height = 0.029},
+        ["Gilneas"] = {x = 0.325, y = 0.35, width = 0.105, height = 0.077},
+        ["Hillsbrad Foothills"] = {x = 0.447, y = 0.3, width = 0.105, height = 0.07},
+        ["Arathi Highlands"] = {x = 0.540, y = 0.34, width = 0.13, height = 0.072},
+        ["Wetlands"] = {x = 0.488, y = 0.412, width = 0.17, height = 0.076},
+        ["Grim Reaches"] = {x = 0.658, y = 0.435, width = 0.07, height = 0.113},
+        ["Loch Modan"] = {x = 0.58, y = 0.488, width = 0.082, height = 0.044},
+        ["Ironforge"] = {x = 0.506, y = 0.492, width = 0.001, height = 0.001},
+        ["Dun Morogh"] = {x = 0.366, y = 0.466, width = 0.22, height = 0.089},
+        ["Searing Gorge"] = {x = 0.480, y = 0.555, width = 0.05, height = 0.025},
+        ["Badlands"] = {x = 0.530, y = 0.555, width = 0.15, height = 0.025},
+        ["Northwind"] = {x = 0.390, y = 0.549, width = 0.09, height = 0.058},
+        ["Burning Steppes"] = {x = 0.480, y = 0.580, width = 0.1, height = 0.025},
+        ["Redridge Mountains"] = {x = 0.543, y = 0.607, width = 0.106, height = 0.066},
+        ["Duskwood"] = {x = 0.42, y = 0.673, width = 0.12, height = 0.037},
+        ["Westfall"] = {x = 0.364, y = 0.65, width = 0.076, height = 0.07},
+        ["Deadwind Pass"] = {x = 0.54, y = 0.673, width = 0.02, height = 0.04},
+        ["Swamp of Sorrows"] = {x = 0.560, y = 0.665, width = 0.1, height = 0.04},
+        ["Blasted Lands"] = {x = 0.56, y = 0.669, width = 0.12, height = 0.105},
+        ["Stranglethorn Vale"] = {x = 0.390, y = 0.710, width = 0.17, height = 0.13},
+        ["Balor"] = {x = 0.285, y = 0.599, width = 0.084, height = 0.051},
+        ["Lapidis Isle"] = {x = 0.275, y = 0.701, width = 0.065, height = 0.059},
+        ["Gillijim's Isle"] = {x = 0.280, y = 0.760, width = 0.09, height = 0.058},
     }
 }
+
+---------------------------------------------------------------------------------------------------------------
+
+CL_GPS = {}
+CL_GPS.__index = CL_GPS
 
 function CL_GPS.newGPS()
     local instance = {}
@@ -79,6 +93,8 @@ function CL_GPS.newGPS()
     instance.characters = {}
     instance.mapDots = {}
     instance.debugZones = false
+    instance.debugMsgCallback = false
+    instance.helper = false
 
     local function messageCallback(inc_msg)
         local _, _, zone, x, y, class, race, level, sender = string.find(inc_msg, "Zone:(.-)-X:(.-)-Y:(.-)-Class:(.-)-Race:(.-)-Level:(.-)-SentBy:(.+)")
@@ -88,8 +104,8 @@ function CL_GPS.newGPS()
         class = class or "Unknown"
         level = tonumber(level) or 0
         sender = sender or "Unknown"
-        if sender == "Unknown" then
-            -- PrintValue("Warning: Received message with unknown sender: " .. inc_msg)
+        if sender == "Unknown" and instance.debugMsgCallback == true then
+            PrintValue("Warning: Received message with unknown sender: " .. inc_msg)
             return
         end
         if sender ~= UnitName("player") then
@@ -149,9 +165,7 @@ function CL_GPS.newGPS()
 
     ---------------------------------------------------------------------------------------------------------------
 
-    local continentPositions = {        
-        -- 0.091 0.080 0.399 0.868
-        -- 0.627 0.027 0.923 0.870
+    local continentPositions = {
         [1] = {x = 0.0, y = 0.0, width = 0.5, height = 1}, -- Kalimdor on left in world view
         [2] = {x = 0.5, y = 0.0, width = 0.5, height = 1}, -- Eastern Kingdoms on right
     }
@@ -166,6 +180,8 @@ function CL_GPS.newGPS()
     local function Measure()
         local b = WorldMapButton
         local cx, cy = GetCursorPosition()
+        local zoneNum = GetCurrentMapZone()
+        local continentNum = GetCurrentMapContinent()
         local s = b:GetEffectiveScale()
         local l, t = b:GetLeft(), b:GetTop()
         local w, h = b:GetWidth(), b:GetHeight()
@@ -174,11 +190,12 @@ function CL_GPS.newGPS()
 
         WorldMapTooltip:SetOwner(b, "ANCHOR_CURSOR")
         WorldMapTooltip:SetText(string.format("World coords: %.3f, %.3f", nx, ny))
+        WorldMapTooltip:AddLine(string.format("Table coords: %.3f, %.3f", nx*2, ny))
+        WorldMapTooltip:AddLine("Continent Number: " .. continentNum, 1, 1, 0)
+        WorldMapTooltip:AddLine("Zone Number: " .. zoneNum, 1, 1, 0)
         WorldMapTooltip:Show()
-    end
-
-    -- Run this once after loading your addon / UI
-    instance.helper = false
+    end    
+    
     local function DrawWorldViewHelper()
         if instance.helper == false then
             instance.helper = true
@@ -207,7 +224,7 @@ function CL_GPS.newGPS()
                         f:SetPoint("TOPLEFT", WorldMapButton, "TOPLEFT", x * WorldMapButton:GetWidth(), -y * WorldMapButton:GetHeight())
 
                         f:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background"})
-                        f:SetBackdropColor(math.random(), math.random(), math.random(), 0.6)
+                        f:SetBackdropColor(math.random(), math.random(), math.random(), 0.8)
 
                         local t = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
                         t:SetPoint("CENTER", f, "CENTER", 0, 0)
@@ -255,8 +272,15 @@ function CL_GPS.newGPS()
                             showDot = true
                         end
                     end
+                elseif zoneIndex > 0 then
+                    -- Zone view: use raw character coordinates if in the same zone
+                    if char.zone == mapZone then
+                        x = char.x
+                        y = char.y
+                        showDot = true
+                    end
                 else
-                    -- Continental or zone view: keep existing logic
+                    -- Continental view: scale to continent positions
                     local charContinent = zoneToContinent[char.zone] or 0
                     if charContinent == continent then
                         local pos = ZonePositions[continent][char.zone]
