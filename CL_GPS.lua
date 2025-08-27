@@ -1,18 +1,65 @@
 ZoneNames = {
     [1] = { -- Kalimdor
-        [9] = "Durotar", [19] = "Mulgore", [26] = "The Barrens", [1] = "Ashenvale", [25] = "Teldrassil", [5] = "Darkshore",
-        [23] = "Tanaris", [29] = "Un'Goro Crater", [21] = "Silithus", [12] = "Feralas", [10] = "Dustwallow Marsh", [22] = "Stonetalon Mountains",
-        [18] = "Moonglade", [31] = "Winterspring", [2] = "Azshara", [27] = "Thousand Needles", [3] = "Blackstone Island", [24] = "Tel'Abim",
-        [7] = "Desolace", [11] = "Fellwood", [15] = "Hyjal", [20] = "Orgrimmar", [28] = "Thunder Bluff", [6] = "Darnassus"
+        [9] = "Durotar", ["Durotar"] = "Durotar",
+        [19] = "Mulgore", ["Mulgore"] = "Mulgore",
+        [26] = "The Barrens", ["Los Baldíos"] = "The Barrens",
+        [1] = "Ashenvale", ["Vallefresno"] = "Ashenvale",
+        [25] = "Teldrassil", ["Teldrassil"] = "Teldrassil",
+        [5] = "Darkshore", ["Costa Oscura"] = "Darkshore",
+        [23] = "Tanaris", ["Tanaris"] = "Tanaris",
+        [29] = "Un'Goro Crater", ["Cráter de Un'Goro"] = "Un'Goro Crater",
+        [21] = "Silithus", ["Silithus"] = "Silithus",
+        [12] = "Feralas", ["Feralas"] = "Feralas",
+        [10] = "Dustwallow Marsh", ["Marjal Revolcafango"] = "Dustwallow Marsh",
+        [22] = "Stonetalon Mountains", ["Sierra Espolón"] = "Stonetalon Mountains",
+        [18] = "Moonglade", ["Claro de la Luna"] = "Moonglade",
+        [31] = "Winterspring", ["Cuna del Invierno"] = "Winterspring",
+        [2] = "Azshara", ["Azshara"] = "Azshara",
+        [27] = "Thousand Needles", ["Mil Agujas"] = "Thousand Needles",
+        [3] = "Blackstone Island", ["Isla Roca Negra"] = "Blackstone Island",
+        [24] = "Tel'Abim", ["Tel'Abim"] = "Tel'Abim",
+        [7] = "Desolace", ["Desolace"] = "Desolace",
+        [11] = "Fellwood", ["Frondavil"] = "Fellwood",
+        [15] = "Hyjal", ["Hyjal"] = "Hyjal",
+        [20] = "Orgrimmar", ["Orgrimmar"] = "Orgrimmar",
+        [28] = "Thunder Bluff", ["Cima del Trueno"] = "Thunder Bluff",
+        [6] = "Darnassus", ["Darnassus"] = "Darnassus"
     },
     [2] = { -- Eastern Kingdoms
-        [13] = "Elwynn Forest", [34] = "Tirisfal Glades", [27] = "Silverpine Forest", [37] = "Western Plaguelands",
-        [12] = "Eastern Plaguelands", [31] = "Thalassian Highlands", [24] = "Scarlet Enclave", [33] = "The Hinterlands", [2] = "Alterac Mountains",
-        [15] = "Gilneas", [18] = "Hillsbrad Foothills", [3] = "Arathi Highlands", [39] = "Wetlands", [17] = "Grim Reaches", [21] = "Loch Modan",
-        [10] = "Dun Morogh", [26] = "Searing Gorge", [4] = "Badlands", [22] = "Northwind", [8] = "Burning Steppes", [23] = "Redridge Mountains",
-        [11] = "Duskwood", [38] = "Westfall", [9] = "Deadwind Pass", [30] = "Swamp of Sorrows", [7] = "Blasted Lands", [29] = "Stranglethorn Vale",
-        [5] = "Balor", [20] = "Lapidis Isle", [14] = "Gillijim's Isle", [19] = "Ironforge", [28] = "Stormwind", [36] = "Undercity",
-        [1] = "Alah'Thalas"
+        [13] = "Elwynn Forest", ["Bosque de Elwynn"] = "Elwynn Forest",
+        [34] = "Tirisfal Glades", ["Claros de Tirisfal"] = "Tirisfal Glades",
+        [27] = "Silverpine Forest", ["Bosque de Argénteos"] = "Silverpine Forest",
+        [37] = "Western Plaguelands", ["Tierras de la Peste del Oeste"] = "Western Plaguelands",
+        [12] = "Eastern Plaguelands", ["Tierras de la Peste del Este"] = "Eastern Plaguelands",
+        [31] = "Thalassian Highlands", ["Tierras Altas Thalassianas"] = "Thalassian Highlands",
+        [24] = "Scarlet Enclave", ["Enclave Escarlata"] = "Scarlet Enclave",
+        [33] = "The Hinterlands", ["Tierras del Interior"] = "The Hinterlands",
+        [2] = "Alterac Mountains", ["Montañas de Alterac"] = "Alterac Mountains",
+        [15] = "Gilneas", ["Gilneas"] = "Gilneas",
+        [18] = "Hillsbrad Foothills", ["Laderas de Trabalomas"] = "Hillsbrad Foothills",
+        [3] = "Arathi Highlands", ["Tierras Altas de Arathi"] = "Arathi Highlands",
+        [39] = "Wetlands", ["Los Humedales"] = "Wetlands",
+        [17] = "Grim Reaches", ["Confines Sombríos"] = "Grim Reaches",
+        [21] = "Loch Modan", ["Loch Modan"] = "Loch Modan",
+        [10] = "Dun Morogh", ["Dun Morogh"] = "Dun Morogh",
+        [26] = "Searing Gorge", ["La Garganta de Fuego"] = "Searing Gorge",
+        [4] = "Badlands", ["Tierras Baldías"] = "Badlands",
+        [22] = "Northwind", ["Viento del Norte"] = "Northwind",
+        [8] = "Burning Steppes", ["Estepas Ardientes"] = "Burning Steppes",
+        [23] = "Redridge Mountains", ["Montañas Crestagrana"] = "Redridge Mountains",
+        [11] = "Duskwood", ["Bosque del Ocaso"] = "Duskwood",
+        [38] = "Westfall", ["Páramos de Poniente"] = "Westfall",
+        [9] = "Deadwind Pass", ["Paso de la Muerte"] = "Deadwind Pass",
+        [30] = "Swamp of Sorrows", ["Pantano de las Penas"] = "Swamp of Sorrows",
+        [7] = "Blasted Lands", ["Las Tierras Devastadas"] = "Blasted Lands",
+        [29] = "Stranglethorn Vale", ["Vega de Tuercespina"] = "Stranglethorn Vale",
+        [5] = "Balor", ["Balor"] = "Balor",
+        [20] = "Lapidis Isle", ["Isla Lapidis"] = "Lapidis Isle",
+        [14] = "Gillijim's Isle", ["Isla de Gillijim"] = "Gillijim's Isle",
+        [19] = "Ironforge", ["Forjaz"] = "Ironforge",
+        [28] = "Stormwind", ["Ventormenta"] = "Stormwind",
+        [36] = "Undercity", ["Entrañas"] = "Undercity",
+        [1] = "Alah'Thalas", ["Alah'Thalas"] = "Alah'Thalas"
     }
 }
 
@@ -93,8 +140,28 @@ function CL_GPS.newGPS()
     instance.characters = {}
     instance.mapDots = {}
     instance.debugZones = false
-    instance.debugMsgCallback = false
+    instance.debugMsgCallback = true
     instance.helper = false
+    local zoneToContinent = {}
+
+    -- region [ Initial Config ]
+
+    local continentPositions = {
+        [1] = {x = 0.0, y = 0.0, width = 0.5, height = 1}, -- Kalimdor on left in world view
+        [2] = {x = 0.5, y = 0.0, width = 0.5, height = 1}, -- Eastern Kingdoms on right
+    }
+
+    for continent, zones in pairs(ZoneNames) do
+        for key, value in pairs(zones) do
+            if type(key) == "string" then
+                zoneToContinent[key] = continent
+            end
+            zoneToContinent[value] = continent
+        end
+    end
+
+    -- endregion [ Initial Config ]
+    -- region [ Functions ]
 
     local function messageCallback(inc_msg)
         local _, _, zone, x, y, class, race, level, sender = string.find(inc_msg, "Zone:(.-)-X:(.-)-Y:(.-)-Class:(.-)-Race:(.-)-Level:(.-)-SentBy:(.+)")
@@ -109,16 +176,18 @@ function CL_GPS.newGPS()
             return
         end
         if sender ~= UnitName("player") then
+            local charContinent = zoneToContinent[zone] or 0
+            local englishZone = (charContinent > 0 and ZoneNames[charContinent][zone]) or zone
             if instance.characters[sender] then
-                instance.characters[sender]:update(zone, x, y, level)
+                instance.characters[sender]:update(englishZone, x, y, level)
             else
-                instance.characters[sender] = CL_Char.new(sender, zone, x, y, class, race, level)
+                instance.characters[sender] = CL_Char.new(sender, englishZone, x, y, class, race, level)
             end
-            -- PrintValue("Processed sender: " .. sender) -- Debug to confirm sender
+            if instance.debugMsgCallback == true then
+                -- PrintValue("Processed sender: " .. sender)
+            end
         end
     end
-
-    instance.messenger = CL_Messenger.newMessenger('CL_GPS', messageCallback, 'GUILD')
 
     local function sendCallback()
         local zone = GetZoneText() or "Unknown"
@@ -136,8 +205,6 @@ function CL_GPS.newGPS()
             CL_Messenger.Send(instance.messenger, message, 'GUILD')
         end        
     end
-
-    instance.timer = CL_Timer.newTimer(1, 1, nil, sendCallback, nil, nil, true)
 
     local function rosterCheckCallback()        
         local numMembers = GetNumGuildMembers()
@@ -158,24 +225,6 @@ function CL_GPS.newGPS()
             end
         end
     end
-    instance.rosterFrame = CreateFrame("Frame")
-    instance.rosterFrame:RegisterEvent("GUILD_ROSTER_UPDATE")
-    instance.rosterFrame:SetScript("OnEvent", rosterCheckCallback)
-    instance.rosterTimer = CL_Timer.newTimer(1, 1, nil, function() GuildRoster() end, nil, nil, true)
-
-    ---------------------------------------------------------------------------------------------------------------
-
-    local continentPositions = {
-        [1] = {x = 0.0, y = 0.0, width = 0.5, height = 1}, -- Kalimdor on left in world view
-        [2] = {x = 0.5, y = 0.0, width = 0.5, height = 1}, -- Eastern Kingdoms on right
-    }
-
-    local zoneToContinent = {}
-    for continent, zones in pairs(ZoneNames) do
-        for _, name in pairs(zones) do
-            zoneToContinent[name] = continent
-        end
-    end
 
     local function Measure()
         local b = WorldMapButton
@@ -194,8 +243,8 @@ function CL_GPS.newGPS()
         WorldMapTooltip:AddLine("Continent Number: " .. continentNum, 1, 1, 0)
         WorldMapTooltip:AddLine("Zone Number: " .. zoneNum, 1, 1, 0)
         WorldMapTooltip:Show()
-    end    
-    
+    end
+
     local function DrawWorldViewHelper()
         if instance.helper == false then
             instance.helper = true
@@ -233,9 +282,7 @@ function CL_GPS.newGPS()
                 end
             end
         end
-    end
-
-    ---------------------------------------------------------------------------------------------------------------
+    end    
 
     local function updateMapDots()
         if instance.debugZones then
@@ -258,7 +305,7 @@ function CL_GPS.newGPS()
             if char.x > 0 and char.y > 0 then
                 if continent == 0 then
                     -- World view: use normalized continent coordinates directly from API
-                    local charContinent = zoneToContinent[char.zone] or 0
+                    local charContinent = zoneToContinent[char.zone] or 0                    
                     if charContinent > 0 then
                         local zPos = ZonePositions[charContinent][char.zone]
                         local cPos = continentPositions[charContinent]
@@ -329,6 +376,26 @@ function CL_GPS.newGPS()
         end
     end
 
+    -- endregion [ Functions ]
+    -- region [ Frames & Objects ]
+
+    instance.messenger = CL_Messenger.newMessenger('CL_GPS', messageCallback, 'GUILD')
+
+    instance.timer = CL_Timer.newTimer(
+        1, -- duration
+        1, -- period
+        nil, -- onStart
+        sendCallback, -- onUpdate
+        nil, -- onEnd
+        nil, -- onCancel
+        true -- endless
+    )
+
+    instance.rosterFrame = CreateFrame("Frame")
+    instance.rosterFrame:RegisterEvent("GUILD_ROSTER_UPDATE")
+    instance.rosterFrame:SetScript("OnEvent", rosterCheckCallback)
+    instance.rosterTimer = CL_Timer.newTimer(1, 1, nil, function() GuildRoster() end, nil, nil, true)
+
     instance.mapFrame = CreateFrame("Frame")
     instance.mapFrame:RegisterEvent("WORLD_MAP_UPDATE")
     instance.mapFrame.lastUpdate = GetTime()
@@ -347,6 +414,7 @@ function CL_GPS.newGPS()
             instance.mapFrame.lastUpdate = currentTime
         end
     end)
-    
+
+    -- endregion [ Frames & Objects ]
     return instance
 end

@@ -35,3 +35,7 @@ That means that if you're at <i>Tirisfal Glades</i> and some of your guild mates
     - Completed the tables of Kalimdor and Eastern Kingdoms. Added the Capital cities and the areas that weren't present at the table.
     - Re-enabled the zonal view (previously disabled by mistake).
     - The continental view is still wrong, but the world view is more or less accurate now.
+
+- <b>27/08/2025:</b>
+    - Added bridge support for Spanish. Considering making an universal version in order to avoid giving specific language support ...
+    - Embellished the code a bit, sorting the mess.
