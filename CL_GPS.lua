@@ -140,7 +140,7 @@ function CL_GPS.newGPS()
     instance.characters = {}
     instance.mapDots = {}
     instance.debugZones = false
-    instance.debugMsgCallback = true
+    instance.debugMsgCallback = false
     instance.helper = false
     local zoneToContinent = {}
 
